@@ -1,0 +1,24 @@
+.promocode-config{
+    display: flex;
+    flex-direction: column;
+
+    label{
+        margin-top: 0.5rem;
+    }
+
+    #promo-title, #promo-description, #promo-min-days, #promo-price-factor{
+        padding: 0.3rem;
+        margin: 0.3rem 0;
+        width: 292px;
+    }
+
+    .checkbox-model{
+        display: flex;
+        margin-bottom: 5px;
+        margin-top: 5px;
+
+        input{
+            margin-right: 5px;
+        }
+    }
+}

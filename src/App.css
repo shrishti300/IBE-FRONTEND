@@ -1,0 +1,26 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    display: none; /* For WebKit (Chrome, Safari, etc.) */
+}
+
+/* Hide scroll bars for Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* Hide scroll bars for Internet Explorer */
+*::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* optional: just make scrollbar invisible */
+ }

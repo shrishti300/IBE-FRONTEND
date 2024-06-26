@@ -1,0 +1,301 @@
+.date-txt {
+  font-size: 0.8rem;
+  margin-top: 1.05rem;
+}
+
+.date-range-picker-wrapper {
+  width: fit-content;
+  background-color: white;
+  position: absolute;
+  z-index: 111;
+  outline: 1px solid gray;
+  margin-left: 1px;
+}
+
+.rdrDateRangePickerWrapper .rdrDefinedRangesWrapper,
+.rdrDateDisplayWrapper,
+.rdrMonthAndYearPickers {
+  display: none;
+}
+
+.rdrMonths .rdrMonth {
+  display: block;
+  @media screen and (max-width: 1130px) {
+    padding-left: 0; /* Take full width */
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .date-range-picker-wrapper {
+    width: 760px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .date-range-picker-wrapper {
+    width: 350px;
+    padding: 0.5rem;
+  }
+  .rdrMonthAndYearWrapper {
+    padding-right: 1rem;
+    //background-color:pink;
+  }
+
+  .rdrMonths {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .date-range-picker-wrapper {
+    width: 310px !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .rdrMonth {
+    width: 300px;
+  }
+  .apply-btn-date {
+    width: 50px;
+    display: flex;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .date-range-picker-wrapper{
+    width: 320px !important;
+  }
+}
+
+.rdrDayNumber {
+  width: fit-content;
+}
+
+.main-date-container {
+  color: black;
+}
+
+.rdrDayDisabled {
+  color: #d6cbcb !important;
+  opacity: 0.2;
+
+  .price{
+    opacity: 0;
+  }
+}
+
+.rdrDayPassive {
+  color: #d6cbcb !important;
+  opacity: 0;
+}
+
+.rdrStartEdge,
+.rdrEndEdge,
+.rdrInRange {
+  color: white !important;
+  z-index: -1 !important;
+}
+
+.rdrDay:has(> .rdrStartEdge) {
+  background-color: rgb(38, 38, 109);
+  color: white !important;
+}
+
+.rdrDay:has(> .rdrEndEdge) {
+  background-color: rgb(38, 38, 109);
+  color: white !important;
+}
+
+.rdrDay:has(> .rdrInRange) {
+  background-color: rgb(193, 194, 194);
+}
+
+.rdrDay:has(> .rdrStartEdge):hover {
+  background-color: rgb(38, 38, 109) !important;
+}
+
+.rdrDay:has(> .rdrEndEdge):hover {
+  background-color: rgb(38, 38, 109) !important;
+}
+
+.rdrDay:has(> .rdrInRange):hover {
+  background-color: rgb(193, 194, 194) !important;
+}
+
+.rdrDayInPreview,
+.rdrDayStartPreview,
+.rdrDayEndPreview {
+  border: none !important;
+}
+
+.rdrDay:has(> .rdrDayEndPreview) {
+  background-color: rgb(38, 38, 109);
+}
+
+.rdrDay:has(> .rdrDayStartPreview) {
+  background-color: rgb(38, 38, 109);
+}
+
+.rdrDay:has(> .rdrDayInPreview) {
+  background-color: rgb(193, 194, 194);
+}
+.rdrStartEdge + span,
+.rdrEndEdge + span {
+  .main-date-container {
+    color: white !important;
+  }
+}
+
+.rdrDayEndPreview + span,
+.rdrDayStartPreview + span {
+  .main-date-container {
+    color: white !important;
+  }
+}
+.rdrDays {
+  width: 105%;
+}
+.rdrWeekDays {
+  width: 105%;
+}
+.rdrMonths {
+  width: 105%;
+  justify-content: space-between;
+}
+
+.rdrDay {
+  height: 2.7rem;
+}
+
+.rdrMonthName {
+  text-align: center;
+  position: relative;
+  left: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.rdrMonthAndYearWrapper {
+  position: absolute;
+  width: 735px;
+  z-index: 11;
+  left: 10px;
+  @media screen and (max-width: 1130px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 320px;
+  }
+}
+
+.date-picker-footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(184, 181, 181);
+  padding: 0.8rem 0;
+  margin: 0 0.8rem;
+  .info-and-apply {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    .nightly-rate-info {
+      margin-right: 2.2rem;
+      @media screen and (max-width:600px) {
+        margin-right: 1;
+      }
+    }
+
+    .apply-btn-date {
+      width: 20%;
+      background-color: rgb(38, 38, 109);
+      padding: 0.8rem 0.3rem;
+      color: white;
+      margin-right: 2rem;
+      border-radius: 3px;
+      border: none;
+      font-weight: bold;
+      @media screen and (max-width: 600px) {
+        width: fit-content;
+        height: fit-content;
+        padding: 0.8rem 0.6rem;
+        margin-right: 0rem;
+      }
+    }
+  }
+
+  .date-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+}
+.date-input-wrapper {
+  border: 1px solid gray;
+  width: 292px;
+  padding: 5px 0;
+  margin-top: 0.44rem;
+  border-radius: 5px;
+
+  @media screen and (max-width: 426px) {
+    width: 255px;
+  }
+
+  .input-date {
+    height: 38px;
+    border: 0;
+    font-size: medium;
+    width: 250px;
+    font-weight: bold;
+
+    @media screen and (max-width: 426px) {
+      width: 220px;
+    }
+  }
+
+  .input-date:focus {
+    outline: none;
+  }
+
+  .date-calender-icon {
+    border: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .info-and-apply {
+    justify-content: space-between;
+
+    .nightly-rate-info{
+      flex: 1;
+      margin-left: 30px !important;
+    }
+
+    .apply-btn-date{
+      flex: 1;
+      margin-right: 0 !important;
+    }
+  }
+
+  .date-footer{
+    font-size: 14px;
+  }
+  
+}
+
+.date-room-wrapper{
+  position: absolute;
+  top: 420px;
+  left: 22.3% !important;
+
+  @media screen and (max-width: 1115px) {
+    left: 49% !important;
+  }
+
+  @media screen and (max-width: 954px) {
+    top: 472px !important;
+    left: 58% !important;
+  }
+}

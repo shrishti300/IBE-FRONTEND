@@ -1,0 +1,33 @@
+.propertyname-div{
+  @media screen and (max-width: 426px) {
+    width: 300px;
+  }
+}
+.property-label{
+  font-size: 0.87rem;
+  margin-bottom: 0.43rem;
+}
+.property-select{
+    border-radius: 4px;
+    background-color:white;
+    width: 18.25rem;
+    height: 3rem;
+
+    @media screen and (max-width: 426px) {
+      width: 16rem;
+    }
+}
+
+.search-field{
+  display: flex;
+}
+
+.checkbox-wrapper {
+  color: rgb(99, 97, 97);
+  margin-bottom: 8px; 
+  padding-left: 0.8rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.menuitem-div{
+  height: 6rem;
+}

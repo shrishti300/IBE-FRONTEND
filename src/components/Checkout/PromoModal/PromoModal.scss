@@ -1,0 +1,35 @@
+.promo-modal{
+    padding: 25px 30px;
+    width: 409px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+
+    .promo-modal-title{
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .promo-modal-description{
+        margin-bottom: 5px;
+    }
+
+    .promo-modal-minDays{
+        margin-bottom: 45px;
+    }
+    
+    .promo-modal-packageTotal{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.custom-promo-modal{
+    position: relative;
+    top: 20%;
+    right: 5%;
+}

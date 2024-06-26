@@ -1,0 +1,44 @@
+@import "../styles/Variables.scss";
+
+.errorpage_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    min-height: 85.8vh;
+}
+  .errorpage {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+  }
+  .errorpage_title{
+    font-size: 1.5rem;
+  }
+  .errorpage_error {
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .errorpage_button-container {
+    margin-top: 20px;
+  }
+  .errorpage_button {
+    padding: 10px 20px;
+    background-color:$uiBlue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    margin-left: 1rem;
+  }
+  .errorpage_button:hover {
+    background-color: $uiBlue;
+  }

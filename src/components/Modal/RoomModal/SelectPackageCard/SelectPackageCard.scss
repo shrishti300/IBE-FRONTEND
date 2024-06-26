@@ -1,0 +1,124 @@
+// <div className='selectpackagecard'>
+//         <div className='selectpackagecard_left_div'>
+//             <p className='selectpackagecard_txt'>Standard Rate</p>
+//             <p className='selectpackagecard_description'>Spend $10 every night you stay and earn $150 in dining credit at the resort.</p>
+//         </div>
+//         <div  className='selectpackagecard_right_div'>
+//             <div className='selectpackagecard_right_div'>
+//           <p className='selectpackagecard_price'> $132</p>
+//           <p className='selectpackagecard_pernight_txt'>per night</p>
+//           </div>
+//           <button className='selectpackagecard_select_btn'>SELECT PACKAGE </button>
+//         </div>
+//     </div>
+
+@import "../../../../styles//Variables.scss";
+
+.selectpackagecard {
+  width: max-content;
+  height: 8.125rem;
+  border-radius: 5px;
+  box-shadow: 3px 2px 10px 3px rgba(219, 219, 219, 0.9);
+  display: flex;
+  @media (max-width: 428px) {
+    width: 18rem;
+    height: max-content;
+  }
+}
+.selectpackagecard_left_div {
+  padding: 2rem;
+  width: 418px;
+  @media (max-width: 1000px) {
+    width: 22rem;
+  }
+  @media (max-width: 722px) {
+    width: 18rem;
+  }
+  @media (max-width: 501px) {
+    width: 15rem;
+  }
+}
+.selectpackagecard_txt {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  @media (max-width: 428px) {
+    font-size: 0.9rem;
+  }
+}
+.selectpackagecard_description {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  @media (max-width: 428px) {
+    font-size: 0.9rem;
+  }
+}
+.selectpackagecard_right_div {
+  background-color: rgba(239, 240, 241, 1);
+  padding: 2rem;
+  width: 200px;
+  @media (max-width: 1000px) {
+    width: 8rem;
+  }
+  @media (max-width: 722px) {
+    width: 8rem;
+  }
+  @media (max-width: 501px) {
+    width: 6rem;
+    padding: 0rem;
+    padding-top: 2rem;
+  }
+}
+.selectpackagecard_price_div {
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+}
+.selectpackagecard_price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.selectpackagecard_pernight_txt {
+  font-size: 0.8rem;
+  color: $lightgrey;
+}
+.selectpackagecard_select_btn {
+  font-size: 0.8rem;
+  color: white;
+  background-color: $uiBlue;
+  width: 153px;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  margin-top: 0.6rem;
+
+  @media (max-width: 1000px) {
+    width: 100px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+  @media (max-width: 502px) {
+    width: 80px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+}
+.selectpackagecard_select_btn_div {
+  @media (max-width: 1000px) {
+    display: flex;
+    justify-content: start;
+  }
+  @media (max-width: 501px) {
+    justify-content: end;
+  }
+}
+
+// <div  className='selectpackagecard_right_div'>
+// <div className='selectpackagecard_price_div'>
+// <p className='selectpackagecard_price'> {currencyObjMapper[current][0]}
+// {(roomType.price)}</p>
+// <p className='selectpackagecard_pernight_txt'>per night</p>
+// </div>
+// <button className='selectpackagecard_select_btn'>SELECT PACKAGE </button>
+// </div>

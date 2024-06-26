@@ -1,0 +1,79 @@
+@import "../../styles/Variables.scss";
+
+.tenant-div{
+  background-color: white;
+  padding: 3rem;
+  padding-right: 6rem;
+  width: 28rem;
+  height: fit-content;
+  overflow-y: scroll;
+  margin: 4rem;
+  border-radius: 4px;
+  @media screen and (max-width:1600px){
+  width: 24rem;
+  }
+@media screen and (max-width:500px){
+  margin:3rem;
+  padding-right: 2rem;
+  padding-left:2rem ;
+}
+@media screen and (max-height:850px){
+  width: 19rem;
+  margin:2rem;
+}
+@media screen and (max-width:446px){
+  margin:2rem;
+  padding: 2rem;
+  width: 22rem;
+}
+}
+
+.days-guest-div {
+  display: flex;
+  justify-content: flex-start;
+  width: 292px;
+
+}
+
+.tenant-submit-btn {
+  background-color: $uiBlue;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 38px;
+  padding-right: 38px;
+  border-radius: 4px;
+  margin-top: 30px;
+  &:disabled {
+    background-color:$uiBlue;
+    opacity: 0.5; 
+    cursor: not-allowed;
+  }
+}
+
+.tenant-btn-div {
+  display: flex;
+  width: 292px;
+  justify-content: space-between;
+
+  button{
+    flex: 1;
+    padding: 8px 15px;
+    margin: 5px 3px;
+  }
+}
+.config-checkbox-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-dropdown-config{
+  padding: 0.9rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.personal-dropdown-option{
+  margin: 0.5rem 0;
+}

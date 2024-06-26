@@ -1,0 +1,22 @@
+
+
+.error404{
+    min-height: 84.5vh;  display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: gray;
+    
+}
+
+.error404_main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error404_txt{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 3rem;
+}

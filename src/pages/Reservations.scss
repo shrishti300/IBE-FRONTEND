@@ -1,0 +1,221 @@
+@import "../styles//Variables.scss";
+
+.reservation_main {
+  margin-left: 12.5rem;
+  margin-right: 12.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  min-height: 81vh;
+  @media (max-width:1086px) {
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+  }
+  @media (max-width:768px) {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+}
+
+
+.reservation_head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  .reservation_head_txt {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @media (max-width:549px) {
+     font-size: 1.3rem;
+    }
+  }
+  .reservation_head_share {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .reservation_head_share_txt {
+    color: #509bff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+.reservation_main_div {
+  border: 1px solid gray;
+  padding: 1.5rem;
+}
+.reservation_first_section_div {
+  border-bottom: 1px solid rgb(182, 180, 180);
+}
+.reservation_first_section_title {
+  display: flex;
+  justify-content: space-between;
+}
+.reservation_first_section_menu {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: start;
+  align-items: center;
+}
+.reservation_first_section_head {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.reservation_first_section_adult_txt {
+  font-size: 1rem;
+  color: #a19e9e;
+}
+.reservation_first_section_cancel_txt {
+  font-size: 1rem;
+  color: #509bff;
+  cursor: pointer;
+}
+
+.reservation_first_section_data {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  @media (max-width:670px) {
+    flex-wrap: wrap;
+  }
+}
+.reservation_first_section_date_container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.reservation_first_section_date_div {
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  padding: 0.7rem;
+  .reservation_first_section_checkin_txt {
+    font-size: 0.8rem;
+    color: #aaa6a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+  }
+  .reservation_first_section_date_txt {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.reservation_first_section_pack_txt {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.reservation_first_section_pack_detail_txt {
+  font-size: 0.9rem;
+  color: #5d5d5d;
+  margin-bottom: 1.2rem;
+}
+.reservation_first_section_right {
+  width: 27.5rem;
+  @media (max-width:670px) {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+  }
+}
+
+.reservation_first_section_total_price_div {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+.reservation_first_section_pricepernight_txt {
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  @media (min-width:1244px) {
+justify-content: start;
+  }
+}
+
+.reservation_second_section {
+  border-bottom: 1px solid gray;
+  margin-top: 1rem;
+}
+.reservation_second_section_head {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.reservation_second_section_txt {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.reservation_second_section_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 00.5rem;
+}
+.reservation_second_section_desc {
+  font-size: 0.9rem;
+  color: #a19e9e;
+}
+.reservation_second_section_body {
+  margin-left: 1.5rem;
+}
+.total_stay_div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.reservation_kdu_title {
+  display: none;
+}
+
+@media print {
+  .reservation_main {
+    width: 100%;
+    margin: 12px;
+  }
+  .billing_div {
+    margin-top: 25rem;
+    padding-top: 3rem;
+  }
+  .reservation_kdu_title {
+    font-size: 30px;
+    margin-right: 0.6rem;
+    font-weight: bold;
+    color: $uiBlue;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .reservation_head_share_txt {
+    display: none;
+  }
+}
+
+.customstyle{
+  width: 600px;
+}
+
+.reservation_room_img{
+  height: 14rem;
+  width: 20.5rem;
+  @media (max-width:1086px) {
+    width: 17rem;
+  }
+  @media (max-width:670px) {
+  width: 100%;
+  }
+ 
+}
+

@@ -1,0 +1,42 @@
+.cancel-confirm-modal{
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .cancel-modal-heading{
+        margin-bottom: 20px;
+    }
+
+    .cancel-yes-no{
+        display: flex;
+
+        .yes-btn{
+            padding: 10px 15px; 
+            background-color: red;
+            border: none;
+            color: white;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .yes-btn:focus, .yes-btn:active{
+            border: none;
+            outline: none;
+        }
+
+        .no-btn{
+            padding: 10px 15px; 
+            background-color: rgb(6, 50, 170);
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .no-btn:focus, .no-btn:active{
+            border: none;
+            outline: none;
+        }
+    }
+}

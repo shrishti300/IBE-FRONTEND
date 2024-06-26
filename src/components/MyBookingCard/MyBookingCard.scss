@@ -1,0 +1,110 @@
+@import "../../styles//Variables.scss";
+
+.mybookingcard_main {
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 4px;
+  display: flex;
+  width: 760px;
+  @media (max-width: 886px) {
+    width: 660px;
+  }
+  @media (max-width: 747px) {
+    width: 500px;
+  }
+  @media (max-width: 605px) {
+    width: 450px;
+  }
+  @media (max-width: 605px) {
+  width: 350px;
+  }
+}
+.mybookingcard_left {
+  padding: 1rem;
+  width: 660px;
+  background-color: white;
+}
+
+.mybookingcard_id_txt {
+  color: $uiBlue;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mybookingcard_right {
+  background-color: rgb(216, 216, 216);
+}
+
+.mybookingcard_name_txt {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.mybookingcard_checkin_div_main {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 605px) {
+    flex-wrap: wrap;
+  }
+}
+
+.mybookingcard_checkin__div {
+  display: flex;
+  justify-content: start;
+ 
+}
+.mybookingcard_checkin_date {
+  font-size: 1rem;
+  color: rgb(77, 73, 73);
+}
+.mybookingcard_checkin_txt {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+.mybookingcard_right {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 250px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mybookingcard_status_div {
+  margin-bottom: 0.2rem;
+}
+
+.mybookingcard_right_price {
+  font-size: 1.5rem;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+
+.mybookingcard_right_night_txt {
+  font-size: 0.8rem;
+  color: rgb(104, 103, 103);
+  margin-bottom: 1rem;
+}
+
+.mybookingcard_right_viewmore_txt {
+  background-color: $uiBlue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 4px;
+}

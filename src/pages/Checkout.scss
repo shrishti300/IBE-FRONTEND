@@ -1,0 +1,356 @@
+// <div className="checkoutpage_itenarary_modal_div">
+//         <p className="checkoutpage_itenarary_modal_txt">hiiiiiiiiii</p>
+//       </div>
+
+.checkoutpage_itenarary_modal_div{
+  display: none;
+}
+
+
+@media (max-width:824px) {
+
+.checkoutpage_itenarary_modal_div{
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  .checkoutpage_itenarary_modal_txt{
+    background-color: #26266d;
+    color: white;
+    width: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 4px;
+  }
+}
+}
+
+.checkout-page {
+  margin: 7rem;
+  min-height: 83.7vh;
+  @media (max-width:1704px){
+    margin: 7rem;
+  }
+
+  @media (max-width:1186px){
+    margin-top: 7rem;
+    margin-left: 5rem;
+    
+  }
+  @media (max-width:826px){
+    display: none;
+  }
+  /* Ensure that the page takes at least the full height of the viewport */
+  .email-checkout {
+    display: flex;
+    margin-top: 15px;
+    flex-flow: column;
+
+    .checkout-confirm-div {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      .checkout-confirm-txt {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+
+    #email-checkout-input {
+      padding: 10px;
+      margin-right: 15px;
+      width: 18rem;
+    }
+
+    .send-email-btn {
+      border: none;
+      color: white;
+      background-color: #26266d;
+      border-radius: 4px;
+      padding-top: 14px;
+      padding-right: 15px;
+      padding-bottom: 14px;
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .send-email-btn:disabled {
+      background-color: gray;
+    }
+  }
+}
+
+.checkoutpage_main_div {
+  display: flex;
+  min-height: 77vh;
+  
+}
+
+.checkoutpage_left_div {
+  width: 50%;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  @media (max-width:826px) {
+    width: 80%;
+  }
+  @media (max-width:489px) {
+margin-left: 2.5rem;
+  }
+}
+
+.checkoutpage_heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.checkoutpage_traveler_div {
+  margin-top: 1rem;
+}
+
+.checkoutpage_info_title {
+  background-color: rgb(239, 240, 241);
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.3rem;
+}
+.traveler_info_name_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+  @media (max-width: 1391px) {
+    gap: 1rem;
+  }
+}
+.checkoutpage_info_txt {
+  font-size: 0.8rem;
+  color: rgb(145, 145, 145);
+  margin-bottom: 0.3rem;
+}
+
+.checkoutpage_info_input {
+  border-radius: 4px;
+  width: 346px;
+  height: 40px;
+  border: 1px solid rgb(175, 174, 174);
+  padding-left: 1rem;
+}
+.checkoutpage_state_info_input {
+  width: 300px;
+}
+
+
+.checkoutpage_city_info_input {
+  border-radius: 4px;
+  width: 250px;
+  padding-left: 1rem;
+  height: 40px;
+  border: 1px solid rgb(175, 174, 174);
+  @media (max-width: 1010px) {
+    width: 350px;
+  }
+}
+
+.traveler_info_contact_div {
+  margin-bottom: 0.8rem;
+}
+
+.traveler_info_email_div {
+  margin-bottom: 0.8rem;
+}
+.checkoutpage_info_btn_div {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.checkoutpage_info_btn {
+  background-color: #26266d;
+  color: white;
+  font-size: 0.8rem;
+  width: 170px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.billing_info_name_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+  @media (max-width: 1391px) {
+    gap: 1rem;
+  }
+}
+
+.billing_info_address_main_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+  @media (max-width: 1391px) {
+    gap: 1rem;
+  }
+}
+
+.billing_info_city_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+  @media (max-width: 1391px) {
+    gap: 1rem;
+  }
+}
+
+.checkoutpage_payment_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+  @media (max-width: 1391px) {
+    gap: 1rem;
+  }
+}
+
+.checkoutpage_payment_info_input {
+  border-radius: 4px;
+  width: 250px;
+  height: 40px;
+  border: 1px solid rgb(175, 174, 174);
+  padding-left: 1rem;
+  @media (max-width: 641px) {
+    width: 350px;
+  }
+  @media (max-width: 1071px) and (min-width:819px) {
+    width: 350px;
+  }
+}
+
+.payment_info_main_div {
+  margin-bottom: 1rem;
+}
+
+.checkoutpage_info_cvv_div {
+  margin-bottom: 0.8rem;
+}
+
+.checkoutpage_info_checkbox_div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.checkoutpage_info_checkbox_txt {
+  color: rgb(112, 112, 112);
+}
+
+.checkoutpage_info_price_div {
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.checkout_page_price_txt {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.checkout_info_purchase_txt {
+  font-size: 0.8rem;
+  color: #26266d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.checkout_info_purchase_btn {
+  background-color: #26266d;
+  color: white;
+  width: 135px;
+  height: 40px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+.checkout_info_purchase_div {
+  display: flex;
+  justify-content: space-between;
+}
+.billing_info_country_div {
+  margin-bottom: 1rem;
+}
+
+.needhelp_div {
+  background-color: rgb(239, 240, 241);
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  .needhelp_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .needhelp_call {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .needhelp_time {
+    font-size: 0.8rem;
+  }
+}
+
+.feild_error_msg{
+  font-size: 0.8rem;
+  color: rgb(212, 25, 25);
+  margin-top: 0.2rem;
+}
+
+.terms_condition_txt{
+  color: rgb(41, 116, 187);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.checkout_zip_input{
+  @media (max-width: 1794px) {
+    width: 346px;
+  }
+}
+
+.billing_info_zip_div{
+  @media (max-width: 1794px) {
+    margin-top: 1rem;
+  } 
+}
+
+
+.checkoutpage_info_exp_div{
+  margin-top: 1rem;
+  @media (max-width: 1071px) {
+   margin-top: 0rem;
+  }
+}
+
+.month_div{
+  @media (max-width: 1499px) {
+    margin-top: 1rem;
+  }
+  @media (max-width: 1071px) {
+   margin-top: 0.2rem;
+  }
+}

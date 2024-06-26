@@ -1,0 +1,59 @@
+// Variable
+@import "../../styles/Variables.scss";
+
+.footer {
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  background-color: $deepBlue;
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.left-div {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5rem;
+  padding-bottom: 0.5rem;
+  @media (max-width: 576px) {
+    padding-left: 0px;
+    padding-top: 0.5rem ;
+    padding-bottom: 0;
+  }
+}
+
+.kickdrum-img {
+  height: 2rem;
+  width: 8rem;
+}
+
+.reserve-txt,
+.copyright-txt {
+  font-size: 0.9rem;
+  color: white;
+  text-align: end; // Align text to the right
+}
+
+.copyright-txt {
+  padding-bottom: 0.6rem;
+  @media (max-width: 576px) {
+    padding-bottom: 0.2rem;
+  }
+}
+
+.right-div {
+  padding: 0.7rem 0;
+  padding-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 576px) {
+    align-items: center;
+    padding: 0.3rem 0;
+  }
+}

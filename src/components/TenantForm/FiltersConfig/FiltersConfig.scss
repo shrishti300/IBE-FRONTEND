@@ -1,0 +1,19 @@
+
+.filterconfig{
+    margin-top: 1rem;
+}
+
+.filterconfig-label{
+    font-size: 0.87rem;
+    margin-bottom: 0.43rem;
+}
+
+.filterconfig-select{
+    height: 2.5rem;
+    border-radius: 4px;
+   background-color: white;
+   width: 18.25rem;
+   @media screen and (max-width: 426px) {
+     width: 16rem;
+   }
+}

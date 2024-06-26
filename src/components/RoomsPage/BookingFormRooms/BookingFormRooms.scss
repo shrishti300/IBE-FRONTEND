@@ -1,0 +1,89 @@
+@import "../../../styles/Variables.scss";
+
+.booking-form-rooms {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1rem;
+  }
+  @media (max-width: 954px) {
+    display: none;
+  }
+}
+
+.booking-search-btn-form {
+  background-color: $uiBlue;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 38px;
+  padding-right: 38px;
+  border-radius: 4px;
+  @media screen and (max-width: 1253px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+  @media (max-width: 705px) {
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: $lightgrey;
+    border: none;
+  }
+}
+.bookingform-dropdown {
+  display: none;
+  @media (max-width: 953px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+    margin-right: 0rem;
+  }
+  @media (max-width: 634px) {
+    margin-right: 0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (max-width:480px) {
+      
+      padding-right: 2rem;
+  }   
+}
+
+@media (max-width: 953px) {
+  .bookingform-dropdown-main {
+    border-bottom: 1px solid gray;
+  }
+  .bookingform-dropdown-div-top {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+  .bookingform-dropdown-div-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 953px) {
+  .bookingform-dropdown-main {
+    display: none;
+  }
+}

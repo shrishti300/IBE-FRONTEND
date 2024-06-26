@@ -1,0 +1,91 @@
+@import "../styles/Variables.scss";
+
+.tenant {
+  flex: 1;
+  background-color: gray;
+  font-size: 16px !important;
+}
+
+.child-div {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 28rem;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top:4rem ;
+  margin-left: 4rem;
+  font-weight: bold;
+  @media screen and (max-width:1600px) {
+    width: 24rem;
+  }
+  @media screen and (max-width:500px){
+    margin:3rem;
+    width: 24rem;
+  }
+  @media screen and (max-width:446px){
+      margin:2rem;
+      width: 22rem;
+    }
+ 
+    @media screen and (max-height:850px){
+        width: 23rem;
+        margin:2rem;
+      }
+}
+
+
+.personal-info-btn{
+    margin-left: 1rem;
+}
+
+
+.personal-info-btn,
+.property-info-btn,
+.roomtype-config-btn {
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+
+.property-info-btn.selected,
+.personal-info-btn.selected,
+.roomtype-config-btn.selected{
+  border-bottom: 3px solid $uiBlue; // Add your desired border style here
+}
+
+.tenant-heading{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .tenant-heading-txt{
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $uiBlue;
+  }
+
+  .tenant-signout-btn{
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    height: 50%;
+    background-color: $uiBlue;
+    border: none;
+    color: white;
+    margin-right: 3rem;
+    margin-top: 0.9rem;
+  }
+}
+
+[data-amplify-authenticator]{
+  margin-top: 30px;
+}
+
+.tenant-heading-navbar{
+  display: flex;
+}

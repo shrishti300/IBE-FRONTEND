@@ -1,0 +1,73 @@
+@import "../styles/Variables.scss";
+.ratingpage_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85.8vh;
+  background-color: gray;
+}
+.ratingpage {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: start;
+}
+.ratingpage_title {
+  font-size: 1.5rem;
+}
+.ratingpage_error {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.ratingpage_button-container {
+  margin-top: 20px;
+}
+.ratingpage_main {
+  .ratingpage_title,
+  .MuiTypography-root {
+    cursor: default;
+  }
+}
+.submit-btn {
+  border: none;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 4px;
+  background-color: $uiBlue;
+  transition: background-color 0.3s ease; /* Add transition effect for color change */
+
+}
+.ratingpage_feedback_txt {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ratingpage_input {
+  width: 24rem;
+  height: 3rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.rating_div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  .submit-btn:disabled,
+  .submit-btn.disabled {
+    background-color: #9592b4; /* Change to desired faded color */
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,191 @@
+@import "../../styles/Variables.scss";
+
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.3rem;
+  padding-left: 5rem;
+  padding-right: 6rem;
+
+  @media (max-width: 820px) {
+    .nav-title-desciption {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+  }
+  @media (max-width: 1185px) {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin-left: 3rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+
+    margin-right: 3rem;
+  }
+  @media (max-width: 505px) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  }
+}
+
+.nav-title-div {
+  display: flex;
+  align-items: center;
+  margin-left: 4.5rem;
+}
+
+.nav-title {
+  font-size: 30px;
+  margin-right: 0.6rem;
+  font-weight: bold;
+  color: $uiBlue;
+}
+
+.nav-title-desciption {
+  font-size: 26px;
+  margin-top: 4px;
+  color: $uiBlue;
+}
+
+.nav-menu-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-info-div {
+  display: flex;
+  align-items: center;
+}
+
+.nav-lang-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-right: 0.3rem;
+}
+
+.nav-currency-img {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: $uiBlue;
+}
+
+.nav-menu-txt {
+  padding: 5px;
+  font-size: 18px;
+  color: $uiBlue;
+}
+.choices__list--dropdown .choices__item {
+  margin-top: 15px;    
+}
+.lang-select {
+  font-size: 18px;
+  color: $uiBlue;
+}
+
+.login-btn, .logout-btn {
+  background-color: $uiBlue;
+  color: white;
+  border-radius: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-left: 3rem;
+
+  @media (max-width: 996px) {
+    margin-left: 1rem;
+  }
+}
+
+
+.mybookings-txt {
+  font-size: 1.5rem;
+  letter-spacing: 2%;
+  margin-right: 4rem;
+}
+
+@media screen and (min-width: 1185px) {
+
+  .hamburger-icon,
+  .hamburger-items {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1186px) {
+  .hamburger-icon {
+    display: flex;
+    align-self: center;
+  }
+
+  .mybookings-txt,
+  .language,
+  .currency {
+    display: none;
+  }
+
+
+  .hamburger-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    padding: 1rem 2rem;
+    top: 74px;
+    z-index: 111;
+    left: -100%;
+
+    .mybookings--mobile{
+      font-size: 22px !important;
+      padding: 1.2rem;
+      flex: 1;
+    }
+    .language-mobile,
+    .currency-mobile {
+      padding: 0;
+      flex: 1;
+    }
+
+    .mybookings--mobile,
+    .language-mobile {
+      font-size: 18px;
+      border-bottom: 1px solid rgb(212, 207, 207);
+    }
+
+    @keyframes slideFromLeft {
+      0% {
+        left: -100%;
+        /* Start position */
+      }
+
+      100% {
+        left: 0;
+        /* End position */
+      }
+    }
+
+
+    @keyframes slideFromRight {
+      0% {
+        left: 0;
+        /* Start position */
+      }
+
+      100% {
+        left: -100%;
+        /* End position */
+      }
+    }
+
+  }
+}

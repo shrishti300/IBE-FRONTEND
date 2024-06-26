@@ -1,0 +1,123 @@
+@import "../../styles/Variables.scss";
+
+.itinerary-main {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 440px;
+  background-color: #eff0f1;
+  padding: 0.8rem;
+
+  @media (max-width: 1714px) {
+    width: 300px;
+  }
+  @media (max-width: 1004px) {
+    width: 270px;
+  }
+
+  .iti-title,
+  .iti-roomtype,
+  .iti-date-price,
+  .iti-special-promotion,
+  .iti-subtotal,
+  .iti-taxes,
+  .iti-vat,
+  .iti-due-now,
+  .iti-due-at-resort {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .iti-title,
+  .iti-roomtype,
+  .iti-date-price,
+  .iti-special-promotion,
+  .iti-subtotal,
+  .iti-taxes,
+  .iti-vat,
+  .iti-due-now,
+  .iti-due-at-resort,
+  .date-and-guest-info,
+  .iti-heading {
+    padding: 0.4rem 0.6rem;
+    color: $darkgrey;
+  }
+
+  .iti-heading {
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0.7rem;
+  }
+
+  .iti-title {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0.5rem;
+    .iti-remove-btn {
+      border: none;
+      background-color: transparent;
+      font-size: medium;
+      color: #006eff;
+      padding: 0;
+    }
+  }
+
+  .iti-line {
+    height: 1px;
+    background-color: black;
+    margin: 0.5rem 0.7rem;
+  }
+
+  .iti-checkout {
+    display: flex;
+    justify-content: center;
+    margin: 0.7rem 0;
+    font-weight: 700;
+    font-size: 14px;
+
+    .iti-checkout-btn {
+      padding: 12px 24px !important;
+      width: 193px;
+      border: 3px solid #26266d;
+      border-radius: 4px;
+    }
+  }
+
+  .iti-special-promotion{
+    .iti-promo-info{
+      display: flex;
+      p{
+        margin-right: 3px;
+      }
+
+      svg{
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+
+  .iti-roomtype{
+    .iti-roomtype-name{
+      font-weight: 600;
+    }
+  }
+}
+.iti-vat,
+.iti-special-promotion {
+  margin-bottom: 0.3rem;
+}
+
+.iti-date-price{
+  display: flex;
+  flex-direction: column;
+
+  .iti-date-price-div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+}

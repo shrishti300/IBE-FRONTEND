@@ -1,0 +1,34 @@
+// <div className="terms-and-condition-container">
+//       <div className="tnc_div">
+//         <p className="tnc_title">WEBSITE</p>
+//         <p className="tnc_body">
+
+.terms-and-condition-container{
+
+}
+
+.tnc_title{
+    background-color: #130739;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.tnc_bold_field{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+
+.bullet-points {
+    margin-left: 20px;
+}
+
+.bullet-point::before {
+    content: '•';
+    display: inline-block;
+    width: 10px;
+    margin-right: 5px;
+}

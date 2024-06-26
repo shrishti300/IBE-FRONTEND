@@ -1,0 +1,29 @@
+// <div className='mybooking'>
+//       <p className='mybookign_txt'> MY BOOKING</p>
+//       <div className='mybooking_main_div'>
+//          <MyBookingCard />
+//       </div>
+//     </div>
+
+.mybooking {
+  padding-left: 4.3rem;
+  margin-top: 2rem;
+  min-height: 84.4vh;
+  @media (max-width: 545px) {
+    padding-left: 2rem;
+  }
+
+}
+
+.mybookign_txt {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mybooking_main_div{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+
+}

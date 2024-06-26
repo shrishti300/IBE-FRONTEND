@@ -1,0 +1,96 @@
+.tax-modal{
+    width: 409px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+
+
+    .tax-modal-heading{
+        font-size: larger;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .tax-modal-roomType{
+        margin-bottom: 25px;
+    }
+
+    .tax-modal-nightly-rate{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .tax-modal-promotion, .tax-modal-nightly-rate{
+        margin-bottom: 20px;
+    }
+
+    .tax-modal-promotion{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tax-modal-each-date-price{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      
+        .iti-date-price-div{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+        }
+    }
+
+    .tax-modal-room-total{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .tax-modal-taxes-info{
+        width: 100%;
+        
+        .tax-modal-resort-fee, .tax-modal-occupancy-tax{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .tax-modal-tax-heading{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .tax-modal-separator{
+        height: 2px;
+        width: 100%;
+        background-color: gray;
+        margin: 10px 0;
+
+    }
+
+    .tax-modal-dues{
+        width: 100%;
+        .tax-modal-due-now, .tax-modal-due-atresort{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    .custom-promo-modal{
+        position: relative;
+        top: 20%;
+        right: 5%;
+    }
+}

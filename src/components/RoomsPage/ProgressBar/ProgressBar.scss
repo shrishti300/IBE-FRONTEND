@@ -1,0 +1,70 @@
+@import "../../../styles/Variables.scss";
+
+.progressbar_main {
+  background-color: $progressbargray;
+}
+.progress-bar {
+  height: 68px;
+  padding: 12px 50px;
+  width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 616px) {
+    width: 500px;
+  }
+  @media (min-width: 441px) and (max-width: 616px) {
+    width: 400px;
+  }
+  
+  @media (max-width: 447px) {
+    width: 350px;
+    padding-left: 6px;
+    padding-right: 6px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+  }
+
+  .progress-bar-top {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    .progress-circle {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .circle-tick {
+        background-color: gray;
+        border-radius: 50%;
+        padding: 5px;
+
+        .fi-br-check {
+          width: 9px;
+          height: 9px;
+          color: white;
+        }
+      }
+    }
+
+    .line {
+      flex: 1;
+      height: 1px;
+      width: 103px;
+      background-color: black;
+      position: relative;
+      top: 15px;
+    }
+  }
+
+  .progress-bar-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.progressbar_txt {
+  @media (max-width: 497px) {
+    font-size: 0.8rem;
+  }
+}

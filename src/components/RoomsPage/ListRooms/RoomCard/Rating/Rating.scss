@@ -1,0 +1,29 @@
+
+// <div className='rating'>
+// <div className='rating_rate'>
+//     <img src={Star} className='rating_rate_img' />
+//     <p className='ating_rate_txt'>3.5</p>
+// </div>
+// <p className='rating_rate_txt'>128 reviews </p>
+// </div>
+
+@import "../../../../../styles/Variables.scss";
+
+.rating_rate{
+    display: flex;
+    margin-bottom: 11px;
+   justify-content: end;
+}
+.rating_rate_txt{
+    font-size: 1rem;
+    color: $uiBlue;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating_review_txt{
+    font-size: 0.85rem;
+    color: $darkgrey;    
+}

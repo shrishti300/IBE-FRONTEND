@@ -1,0 +1,148 @@
+@import "../../../styles/Variables.scss";
+
+.listrooms {
+  margin-left: 1.35rem;
+  height: fit-content;
+
+  @media screen and (max-width: 940px) {
+    margin-right: 1rem;
+  }
+}
+
+.listrooms_div {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  @media screen and (max-width: 1713px) {
+    gap: 1.15rem;
+  }
+
+  @media (max-width: 942px) {
+    justify-content: space-between;
+  }
+}
+
+.listroom_listcard_div {
+  width: 70%;
+}
+
+.listroom_itenary_div {
+  width: 20%;
+}
+
+
+
+
+.listrooms_menubar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.95rem;
+  margin-left: 1rem;
+
+  @media screen and (max-width: 552px) {
+    display: block;
+
+  }
+}
+
+.roomresult_txt {
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  @media screen and (max-width: 455px) {
+
+    margin-left: 0.5rem;
+  }
+}
+
+.roomresults_page_div {
+  display: flex;
+
+  @media screen and (max-width: 554px) {
+
+    margin-top: 1rem;
+  }
+}
+
+.roomresults_result_txt {
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.space {
+  color: $lightgrey;
+}
+
+.roomresults_price_dropdown {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.roomresults_dropdown_img {
+  height: 0.37rem;
+  width: 0.688rem;
+}
+
+.roomresults_dropdown_div {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+
+  @media screen and (max-width: 447px) {
+    display: flex;
+    align-items: start;
+    margin-top: 0.5rem;
+  }
+
+}
+
+
+.pagination_btn {
+  border: none;
+  background-color: white;
+}
+
+.sort-dropdown-roompage {
+  display: flex;
+  flex-direction: column;
+
+  .roomresults_dropdown_div {
+    flex: 1;
+  }
+
+  .sort-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 111;
+    background-color: rgb(224, 219, 219);
+    margin-top: 30px;
+    border: 1px solid gray;
+
+    .sort-dropdown-item {
+      padding: 10px 20px;
+      border: none;
+      background-color: white;
+    }
+
+    .sort-dropdown-item:hover {
+      background-color: rgb(213, 230, 245) !important;
+    }
+  }
+}
+
+
+.roomresults_price_dropdown {
+  font-size: 1rem;
+
+  @media screen and (max-width: 447px) {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+}

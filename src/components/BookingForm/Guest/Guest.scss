@@ -1,0 +1,64 @@
+.guest-main-div{
+    margin-top: 16px;
+    
+}
+.guest-label{
+    font-size: 0.87rem;
+    margin-bottom: 0.43rem;
+
+}
+.guest-select{
+
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    width: 12.5rem;
+    height: 3rem;
+
+    @media screen and (max-width: 426px) {
+        width: 10.4rem;
+      }
+  
+}
+
+
+
+.option-type{
+    font-size: 16px;
+    font-weight: bold;
+}
+.option-age{
+    font-size: 14px;
+}
+
+.option-right{
+    display: flex;
+}
+
+.option-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.option-dec{
+    text-decoration: none;
+    border: none;
+    background:none;
+    font-size: 2rem;
+}
+.option-inc{
+    text-decoration: none;
+    border: none;
+    background:none;
+    font-size: 1.5rem;
+}
+.option-count{
+    display: flex;
+    align-items: center;
+}
+
+.MuiSelect-select{
+    text-overflow: clip !important;
+    overflow-x: scroll !important ;
+}
+

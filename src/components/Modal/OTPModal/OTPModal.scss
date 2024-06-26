@@ -1,0 +1,43 @@
+// <div className='otp_div'>
+// <p className='otp_txt'> Enter OTP for cancelling the room booking</p>
+// <input type='text' className='otp_input'/>
+// <div classNameC'>
+//    <button className='otp_btn'> CONFIRM OTP</button>
+// </div>
+
+@import "../../../styles/Variables.scss";
+
+.opt_div{
+    padding-left:1rem ;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+.otp_txt{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.otp_input{
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 4px;
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.otp_btn_div{
+    display: flex;
+    justify-content: end;
+}
+
+.otp_btn{
+background-color:#26266d;
+color: white;
+padding-left:0.5rem ;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+padding-right: 0.5rem;
+border-radius: 4px;
+border: none;
+margin-top: 1.5rem;
+}

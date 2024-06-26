@@ -1,0 +1,61 @@
+.roompage_content_div {
+  margin-left: 5.25rem;
+  margin-right: 5.25rem;
+  @media (max-width: 1051px) {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+  @media (max-width: 741px) {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+.roompage_room_filter_div {
+  display: flex;
+  margin-top: 42px;
+  margin-bottom: 10px;
+  @media (max-width: 741px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  @media (max-width: 942px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+.roomspage {
+  margin-bottom: 4rem;
+  overflow-x: hidden !important;
+}
+.roompage_itinerary_div {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.container-div {
+  @media (max-width: 1265px) {
+    width: 800px;
+  }
+  @media (max-width: 1190px) {
+    width: 750px;
+  }
+  @media (max-width: 1102px) {
+    width: 700px;
+  }
+  @media (max-width: 984px) {
+    width: 650px;
+  }
+  @media (max-width: 942px) {
+    width: 100%
+  }
+}
+
+.roompage_itinerary_sub_div{
+    @media (max-width: 942px) {
+        display: none;
+      }
+}
+
