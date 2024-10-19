@@ -50,28 +50,6 @@ Start the frontend development server:
 npm start
 Open your browser and navigate to http://localhost:3000 to view the application.
 
-# Project Structure
-multi-tenant-booking-engine/
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   └── resources/
-│   │   └── test/
-│   └── pom.xml
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── store/
-│   │   ├── App.tsx
-│   │   ├── index.tsx
-│   │   └── ...
-│   ├── package.json
-│   └── ...
-└── README.md
-
 # Deployment
 Backend Deployment
 Deploy the backend to Azure App Service.
