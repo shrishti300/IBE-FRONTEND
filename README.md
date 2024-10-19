@@ -1,17 +1,17 @@
 
 
 # OVERVIEW 
-This repository contains the source code for a highly scalable, configurable, and secure multi-tenant hotel booking engine. The application is designed to ensure responsiveness across various devices and is built using Spring Boot, React, TypeScript, PostgreSQL, GraphQL, and Azure.
+This repository contains the source code for a highly scalable, configurable, and secure multi-tenant hotel booking engine. The application is designed to ensure responsiveness across various devices and is built using Spring Boot, React, TypeScript, DynamoDB, GraphQL, and AWS
 
 # Features
 Scalability: Designed to handle multiple tenants efficiently.
 Configuration: Easily configurable to meet various tenant requirements.
-Security: Implements robust security measures, including Azure AD B2C for authentication and KeyVault for secure credential storage.
+Security: Implements robust security measures, including AWS secrets manager for authentication and KeyVault for secure credential storage.
 Responsiveness: Ensures optimal performance and user experience across different devices.
 Technologies Used
-Backend: Spring Boot, GraphQL, PostgreSQL
+Backend: Spring Boot, GraphQL, NoSQL
 Frontend: React, TypeScript
-Cloud Services: Azure App Service, Azure Static Web Apps, Azure KeyVault, Azure AD B2C, Azure Monitor
+Cloud Services: AWS
 Testing: JUnit for backend testing, Cypress for end-to-end frontend testing
 Getting Started
 Prerequisites
@@ -20,8 +20,8 @@ npm or yarn
 
 # Backend
 Java (JDK 11 or higher)
-PostgreSQL
-Azure account
+DYNAMODB
+AWS account
 Installation
 Clone the repository:
 
@@ -52,10 +52,10 @@ Open your browser and navigate to http://localhost:3000 to view the application.
 
 # Deployment
 Backend Deployment
-Deploy the backend to Azure App Service.
+Deploy the backend to AWS Service.
 Ensure the necessary environment variables are configured in the Azure App Service settings.
 Frontend Deployment
-Deploy the frontend to Azure Static Web Apps.
+Deploy the frontend to AWS S3.
 Ensure the environment variables are set up correctly for the static web app.
 Testing
 Backend:
